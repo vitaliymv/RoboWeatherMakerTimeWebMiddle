@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div class="links">
+        <h2><a href="index.html">Weather on current day</a></h2>
+        <h2><a href="future.html">Weather on future day</a></h2>
+    </div>
+    
+    <main>
+        <div class="params">
+            <select name="cities" id="cities">
+                <option value="Cherkasy">Cherkasy</option>
+                <option value="Kiev">Kyiv</option>
+                <option value="Lviv">Lviv</option>
+            </select>
+            <div class="search">
+                <h3>Search by name: </h3>
+                <form id="search-form">
+                    <span id="not-found"></span>
+                    <input type="text" placeholder="City" name="search">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+            <select name="amount" id="amount">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+    </main>
+    
+    <section>
+        <div id="few-days"></div>
+    </section>
+    <script src="forecast.js"></script>
+</body>
+
+</html>
